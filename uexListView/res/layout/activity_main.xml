@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent" >
+
+    <org.zywx.wbpalmstar.plugin.uexlistview.BaseListView
+        xmlns:swipe="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/plugin_listview_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="none"
+        android:scrollbars="none"
+        android:scrollingCache="false"
+        swipe:swipeActionLeft="reveal"
+        swipe:swipeActionRight="reveal"
+        swipe:swipeAnimationTime="0"
+        swipe:swipeBackView="@+id/plugin_item_back"
+        swipe:swipeCloseAllItemsWhenMoveList="true"
+        swipe:swipeFrontView="@+id/plugin_item_front"
+        swipe:swipeMode="left"
+        swipe:swipeOffsetLeft="50dp"
+        swipe:swipeOffsetRight="50dp"
+        swipe:swipeOpenOnLongPress="false" />
+
+</RelativeLayout>
