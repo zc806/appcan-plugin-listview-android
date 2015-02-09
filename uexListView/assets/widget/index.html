@@ -55,11 +55,13 @@
 	}
 	
 	function start(){
+		var width = window.screen.width;
+		var height = window.screen.height - 200;
 		var params = {
 			"x": 0,
-	        "y": 100,
-	        "w":350,
-	        "h":400
+	        "y": 200,
+	        "w":width,
+	        "h":height
 		};
 		
 		var items = {
@@ -75,7 +77,7 @@
 			               "subtitleSize": 10,
 			               "subtitleColor":"#000000",
 			               "selectedBackgroundColor":"#006000",
-			               "backgroundColor":"#FF0000",
+			               "backgroundColor":"#FFFFFF",
 			               "height":100
 			               },
 			               {
@@ -227,7 +229,7 @@
 	}
 	
 	function end() {
-		uexListView.close();
+		uexListView.close("");
 	}
 	
 	function edit() {
